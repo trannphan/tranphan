@@ -46,12 +46,16 @@ nav a {
 
 /* LISTS */
 ul {
-  list-style: none;
-  padding: 0;
+  list-style-position: outside;
+  padding-left: 1.5rem;   /* indent bullets */
+  text-align: left;       /* 🔥 left-align text */
+  margin: 1.5rem auto;    /* spacing above/below */
+  max-width: 650px;       /* keeps lines readable */
 }
 
 li {
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;    /* 🔥 more space between lines */
+  line-height: 1.6;       /* improves readability */
 }
 
 /* PROFILE PHOTO */
