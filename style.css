@@ -1,5 +1,5 @@
 body {
-  font-family: "Courier New", Courier, monospace;  /* 🔥 fixed-width font */
+  font-family: "Courier New", Courier, monospace;
   margin: 0;
   background: #f7f5f2;
   color: #333;
@@ -34,7 +34,24 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #4a6a86;
-  font-weight: normal;
+}
+
+/* CONTENT */
+.content {
+  max-width: 720px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* LISTS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.7rem;
 }
 
 /* PROFILE PHOTO */
@@ -44,17 +61,8 @@ nav a {
 }
 
 .profile-photo img {
-  width: 200px;   /* 🔽 reduced to 50% */
+  width: 200px;
   border-radius: 50%;
-}
-
-/* CONTENT */
-.content {
-  max-width: 720px;
-  margin: auto;
-  text-align: center;
-  padding: 0 2rem;
-  font-size: 0.85rem;
 }
 
 /* ICONS */
@@ -76,15 +84,23 @@ nav a {
   color: #2f4f66;
 }
 
-/* TILE IMAGE */
+/* UPDATES */
+.updates {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.updates h3 {
+  text-align: center;
+}
+
 .tile-image {
   text-align: center;
   margin-top: 4rem;
 }
 
 .tile-image img {
-  width: 105px;   /* 🔼 increased ~30% */
-  border-radius: 4px;
+  width: 105px;
 }
 
 /* FOOTER */
@@ -94,25 +110,4 @@ footer {
   text-align: center;
   padding: 1.5rem;
   margin-top: 4rem;
-}
-
-/* UPDATES */
-.updates {
-  margin-top: 3rem;
-  text-align: left;
-}
-
-.updates h3 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.updates ul {
-  list-style: none;
-  padding: 0;
-}
-
-.updates li {
-  margin-bottom: 0.6rem;
-  font-size: 0.85rem;
 }
