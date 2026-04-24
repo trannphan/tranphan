@@ -1,13 +1,13 @@
 body {
-  font-family: Georgia, serif;
+  font-family: "Courier New", Courier, monospace;  /* 🔥 fixed-width font */
   margin: 0;
   background: #f7f5f2;
   color: #333;
 }
 
-/* HEADER (tile-matched blue) */
+/* HEADER */
 header {
-  background: #4a6a86;   /* adjusted to match tile */
+  background: #4a6a86;
   color: white;
   text-align: center;
   padding: 2.5rem 1rem;
@@ -15,12 +15,12 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 header p {
   margin-top: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* NAV */
@@ -34,17 +34,17 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   color: #4a6a86;
-  font-weight: 500;
+  font-weight: normal;
 }
 
-/* PROFILE PHOTO (2× bigger again) */
+/* PROFILE PHOTO */
 .profile-photo {
   text-align: center;
   margin: 3rem 0 1.5rem;
 }
 
 .profile-photo img {
-  width: 400px;   /* 🔥 increased again */
+  width: 200px;   /* 🔽 reduced to 50% */
   border-radius: 50%;
 }
 
@@ -54,10 +54,10 @@ nav a {
   margin: auto;
   text-align: center;
   padding: 0 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-/* ICONS (centered row) */
+/* ICONS */
 .icons {
   display: flex;
   justify-content: center;
@@ -76,14 +76,14 @@ nav a {
   color: #2f4f66;
 }
 
-/* TILE IMAGE (20% of profile size) */
+/* TILE IMAGE */
 .tile-image {
   text-align: center;
-  margin-top: 4rem;   /* 🔥 spacing fix */
+  margin-top: 4rem;
 }
 
 .tile-image img {
-  width: 80px;   /* 20% of 400px */
+  width: 105px;   /* 🔼 increased ~30% */
   border-radius: 4px;
 }
 
