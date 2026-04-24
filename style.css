@@ -5,9 +5,9 @@ body {
   color: #333;
 }
 
-/* HEADER (adjusted to match tile palette) */
+/* HEADER (tile-matched blue) */
 header {
-  background: #3f5f7f;  /* softer blue */
+  background: #4a6a86;   /* adjusted to match tile */
   color: white;
   text-align: center;
   padding: 2.5rem 1rem;
@@ -33,18 +33,18 @@ nav {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #3f5f7f;
+  color: #4a6a86;
   font-weight: 500;
 }
 
-/* PROFILE PHOTO */
+/* PROFILE PHOTO (2× bigger again) */
 .profile-photo {
   text-align: center;
-  margin: 2.5rem 0 1rem;
+  margin: 3rem 0 1.5rem;
 }
 
 .profile-photo img {
-  width: 280px;   /* 🔥 2× larger */
+  width: 400px;   /* 🔥 increased again */
   border-radius: 50%;
 }
 
@@ -57,46 +57,41 @@ nav a {
   font-size: 1.1rem;
 }
 
-/* ICONS */
+/* ICONS (centered row) */
 .icons {
   display: flex;
   justify-content: center;
   gap: 35px;
   margin-top: 2rem;
-  flex-wrap: wrap;
 }
 
-.icon-block {
-  text-align: center;
-}
-
-.icon-block i {
+.icons a {
   font-size: 2rem;
-  color: #3f5f7f;
+  color: #4a6a86;
+  transition: 0.2s;
 }
 
-.icon-block span {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.9rem;
+.icons a:hover {
+  transform: translateY(-4px);
+  color: #2f4f66;
 }
 
-/* TILE IMAGE */
+/* TILE IMAGE (20% of profile size) */
 .tile-image {
   text-align: center;
-  margin: 2.5rem 0;
+  margin-top: 4rem;   /* 🔥 spacing fix */
 }
 
 .tile-image img {
-  width: 140px;  /* half of profile (280 → 140) */
+  width: 80px;   /* 20% of 400px */
   border-radius: 4px;
 }
 
 /* FOOTER */
 footer {
-  background: #3f5f7f;
+  background: #4a6a86;
   color: white;
   text-align: center;
   padding: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
