@@ -1,83 +1,102 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
   margin: 0;
-  line-height: 1.6;
-  background: #ffffff;
+  background: #f7f5f2;
   color: #333;
 }
 
-/* HEADER */
+/* HEADER (adjusted to match tile palette) */
 header {
-  background: #00274C;
+  background: #3f5f7f;  /* softer blue */
   color: white;
-  padding: 2rem;
   text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
 }
 
 /* NAV */
 nav {
-  background: #f4f4f4;
-  padding: 1rem;
   text-align: center;
+  padding: 1rem;
+  background: #eae7e2;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
-  color: #00274C;
-  font-weight: bold;
+  color: #3f5f7f;
+  font-weight: 500;
 }
 
 /* PROFILE PHOTO */
 .profile-photo {
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 2.5rem 0 1rem;
 }
 
 .profile-photo img {
-  width: 140px;              /* 🔽 reduced size */
+  width: 280px;   /* 🔥 2× larger */
   border-radius: 50%;
-  object-fit: cover;
 }
 
 /* CONTENT */
 .content {
-  max-width: 700px;
+  max-width: 720px;
   margin: auto;
-  padding: 1rem 2rem;
   text-align: center;
+  padding: 0 2rem;
+  font-size: 1.1rem;
 }
 
-h2 {
-  color: #00274C;
-}
-
-/* ICONS (ONE LINE, CENTERED) */
+/* ICONS */
 .icons {
-  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 35px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.icons a {
-  font-size: 1.6rem;
-  color: #00274C;
-  text-decoration: none;
-  transition: 0.2s;
+.icon-block {
+  text-align: center;
 }
 
-.icons a:hover {
-  color: #555;
-  transform: translateY(-3px);
+.icon-block i {
+  font-size: 2rem;
+  color: #3f5f7f;
 }
 
-/* FOOTER (FULL WIDTH) */
+.icon-block span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+}
+
+/* TILE IMAGE */
+.tile-image {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.tile-image img {
+  width: 140px;  /* half of profile (280 → 140) */
+  border-radius: 4px;
+}
+
+/* FOOTER */
 footer {
-  background: #00274C;
+  background: #3f5f7f;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-top: 3rem;
-  width: 100%;
 }
