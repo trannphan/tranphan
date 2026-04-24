@@ -6,6 +6,7 @@ body {
   color: #333;
 }
 
+/* HEADER */
 header {
   background: #00274C;
   color: white;
@@ -13,6 +14,7 @@ header {
   text-align: center;
 }
 
+/* NAV */
 nav {
   background: #f4f4f4;
   padding: 1rem;
@@ -26,49 +28,56 @@ nav a {
   font-weight: bold;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
+/* PROFILE PHOTO */
+.profile-photo {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.profile-photo img {
+  width: 140px;              /* 🔽 reduced size */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.content {
+  max-width: 700px;
   margin: auto;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 h2 {
   color: #00274C;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eee;
-}
-
-.profile {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-
-.profile-left img {
-  width: 180px;
-  border-radius: 10px;
-}
-
-.profile-right {
-  flex: 1;
-}
-
+/* ICONS (ONE LINE, CENTERED) */
 .icons {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 .icons a {
-  margin-right: 15px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #00274C;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 .icons a:hover {
   color: #555;
+  transform: translateY(-3px);
+}
+
+/* FOOTER (FULL WIDTH) */
+footer {
+  background: #00274C;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 100%;
 }
