@@ -56,7 +56,7 @@ ul {
 }
 
 li {
-  font-size: 2rem;       /* 🔽 ~20% smaller (from 1rem baseline) */
+  font-size: 1rem;       /* 🔽 ~20% smaller (from 1rem baseline) */
   margin-bottom: 0.7rem;   /* 🔽 ~30% tighter spacing */
   line-height: 1.4;        /* slightly tighter */
 }
